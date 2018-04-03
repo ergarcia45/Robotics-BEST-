@@ -72,12 +72,14 @@ task autonomous()
 			motor[rightjoystick2] = 0;
 			motor[leftjoystick]  = 0;
 			motor[leftjoystick2]= 0;
-			motor[armMotor] = 75;
+			motor[rightmotor] = 75;
+			motor[leftmotor] = 75;
 			wait1Msec(1000);
 
 
 
-			motor[clawMotor] = 127;
+			motor[leftclaw] = 127;
+			motor[rightclaw] = 127;
 			wait1Msec(2000);
 			motor[rightjoystick] = -50;
 			motor[leftjoystick] = -50;
