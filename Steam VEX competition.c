@@ -61,6 +61,9 @@ void pre_auton()
 
 task autonomous()
 {
+
+	motor[leftclaw] = -127;
+	motor[rightclaw] = 127;
   motor[leftjoystick] = 127;
   motor[leftjoystick2] = 127;
   motor[rightjoystick] = 127;
@@ -79,7 +82,7 @@ task autonomous()
 
 
 			motor[leftclaw] = 127;
-			motor[rightclaw] = 127;
+			motor[rightclaw] = -127;
 			wait1Msec(2000);
 			motor[rightjoystick] = -50;
 			motor[leftjoystick] = -50;
